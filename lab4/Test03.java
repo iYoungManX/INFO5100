@@ -1,9 +1,11 @@
-package com.yao;
+
 
 import java.util.Scanner;
 
 public class Test03 {
+
     public static void main(String[] args) {
+        Scanner scanner2 = new Scanner();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the number of assignment: ");
         int len=scanner.nextInt();
@@ -32,7 +34,7 @@ public class Test03 {
             percentage[i]=scanner.nextInt();
         }
 
-        WeightedGrade2 weightedGrade= new WeightedGrade2(earned,scores,percentage);
+        WeightedGrade3 weightedGrade= new WeightedGrade3(earned,scores,percentage);
         String result= weightedGrade.getScore();
         System.out.println("=======================================");
         System.out.println("=======================================");

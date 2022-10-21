@@ -1,4 +1,4 @@
-package com.yao;
+
 
 public class WeightedGrade3 {
 
@@ -46,7 +46,7 @@ public class WeightedGrade3 {
         for(int i=0;i<n;i++){
             weightedScore+=(double)earned[i]/scores[i]*percentage[i];
         }
-        //weightedScore/=100;
+
         System.out.println(weightedScore);
         if(weightedScore>=90 && weightedScore<=100){
             return "A";
